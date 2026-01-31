@@ -1,0 +1,11 @@
+node_modules
+.cache
+build
+# Electron build output
+dist/
+build/
+
+# Dependencies
+node_modules/
+dist/
+build/

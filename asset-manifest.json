@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GameJam2026/static/css/main.1b7fc4ab.css",
+    "main.js": "/GameJam2026/static/js/main.199fa297.js",
+    "index.html": "/GameJam2026/index.html",
+    "main.1b7fc4ab.css.map": "/GameJam2026/static/css/main.1b7fc4ab.css.map",
+    "main.199fa297.js.map": "/GameJam2026/static/js/main.199fa297.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b7fc4ab.css",
+    "static/js/main.199fa297.js"
+  ]
+}

@@ -1,5 +1,7 @@
 # MASK SHIFT - Ultimate Edition
 
+[![Global Game Jam 2026](https://img.shields.io/badge/GGJ-2026-orange)](https://globalgamejam.org/games/2026/mask-shift-2)
+
 **🎮 [Jugar en Global Game Jam](https://globalgamejam.org/games/2026/mask-shift-2)**
 
 **🌐 [Jugar online](https://AmaraX7.github.io/GameJam2026)**

@@ -18,16 +18,17 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "electron:dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron:build": "npm run build && electron-builder",
-    "electron:build:win": "npm run build && electron-builder --win"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build && npm run copy-electron",
+  "copy-electron": "cp public/electron.js build/electron.js",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "electron:dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+  "electron:build": "npm run build && electron-builder",
+  "electron:build:win": "npm run build && electron-builder --win"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -58,19 +59,20 @@
     "wait-on": "^9.0.3"
   },
   "build": {
-    "appId": "com.gamejam.gamejam26",
-    "productName": "GameJam2026",
-    "files": [
-      "build/**/*",
-      "node_modules/**/*",
-      "public/electron.js"
-    ],
-    "directories": {
-      "buildResources": "public"
-    },
-    "win": {
-      "target": "nsis",
-      "icon": "public/icon.png"
-    }
+  "appId": "com.gamejam.gamejam26",
+  "productName": "GameJam2026",
+  "files": [
+    "build/**/*",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "build/electron.js"
+  },
+  "directories": {
+    "buildResources": "assets"
+  },
+  "win": {
+    "target": "nsis"
   }
+}
 }

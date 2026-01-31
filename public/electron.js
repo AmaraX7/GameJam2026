@@ -1,22 +1,18 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const isDev = require('electron-is-dev');
 
 function createWindow() {
   const win = new BrowserWindow({
     width: 1280,
     height: 720,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false
+      nodeIntegration: false,
+      contextIsolation: true
     }
   });
 
-  win.loadURL(
-    isDev
-      ? 'http://localhost:3000'
-      : `file://${path.join(__dirname, '../build/index.html')}`
-  );
+  // En producción, los archivos están en el mismo directorio que electron.js
+  win.loadFile(path.join(__dirname, 'index.html'));
 }
 
 app.whenReady().then(createWindow);

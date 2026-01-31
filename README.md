@@ -1,6 +1,13 @@
 # MASK SHIFT - Ultimate Edition
 
+**🎮 [Jugar en Global Game Jam](https://globalgamejam.org/games/2026/mask-shift-2)**
+
+**🌐 [Jugar online](https://AmaraX7.github.io/GameJam2026)**
+
 Un juego de plataformas 2D donde las máscaras te otorgan poderes únicos para superar desafíos cada vez más complejos.
+
+Un juego de plataformas 2D donde las máscaras te otorgan poderes únicos para superar desafíos cada vez más complejos.
+
 
 ## Instalación y Ejecución
 

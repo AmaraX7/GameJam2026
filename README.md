@@ -2,6 +2,39 @@
 
 Un juego de plataformas 2D donde las máscaras te otorgan poderes únicos para superar desafíos cada vez más complejos.
 
+## Instalación y Ejecución
+
+### Requisitos
+- Node.js 18 o superior
+- npm
+
+### Opción 1: Ejecutar directamente (recomendado)
+Este paquete incluye todas las dependencias (`node_modules`), así que puedes ejecutar directamente:
+```bash
+npm start
+```
+
+El juego se abrirá automáticamente en tu navegador en http://localhost:3000
+
+### Opción 2: Instalar dependencias desde cero
+Si prefieres instalar las dependencias tú mismo:
+```bash
+npm install
+npm start
+```
+
+### Crear ejecutable de Electron para Windows
+```bash
+npm run electron:build:win
+```
+
+El ejecutable se generará en la carpeta `dist/`
+
+### Desplegar a GitHub Pages
+```bash
+npm run deploy
+```
+
 ## Controles
 
 ### Teclado
